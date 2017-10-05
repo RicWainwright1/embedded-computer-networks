@@ -22,10 +22,11 @@
 #define BOARDER     "****************************"
 
 // specify a welcome message
-const char * welcome_message[2] = 
+const char * welcome_message[3] = 
 {
   "*     Hello LCD World!     *",
-  "*      Welcome to SHU      *"
+  "*      Welcome to SHU      *",
+	"*      Ric Wainwright      *"
 };
 
 // CODE
@@ -55,11 +56,12 @@ int main()
   BSP_LCD_DisplayStringAtLine(0, (uint8_t *)BOARDER);
   BSP_LCD_DisplayStringAtLine(1, (uint8_t *)welcome_message[0]);
   BSP_LCD_DisplayStringAtLine(2, (uint8_t *)welcome_message[1]);
-  BSP_LCD_DisplayStringAtLine(3, (uint8_t *)BOARDER); 
+	BSP_LCD_DisplayStringAtLine(3, (uint8_t *)welcome_message[2]);
+  BSP_LCD_DisplayStringAtLine(4, (uint8_t *)BOARDER); 
     
   // delay a little ...
   HAL_Delay(5000);
-  
+
   // display an "uptime" counter
   BSP_LCD_DisplayStringAtLine(5, (uint8_t *)"Current uptime =");
   int counter = 0;
