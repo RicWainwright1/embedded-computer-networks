@@ -3,7 +3,7 @@
  *
  * this is the main lcd application
  *
- * author:    Dr. Alex Shenfield
+ * author:    Dr. Ric Wainwright
  * date:      04/09/2017
  * purpose:   55-604481 embedded computer networks : lab 102
  */
