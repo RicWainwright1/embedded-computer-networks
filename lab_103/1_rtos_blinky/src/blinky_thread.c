@@ -1,4 +1,4 @@
-/* 
+ /* 
  * blinky_thread.c
  *
  * simple thread to handle blinking some leds on the discovery board - updated
@@ -79,7 +79,7 @@ void led_1_thread(void const *argument)
   {
     // toggle the first led on the gpio pin
     toggle_gpio(led1);
-    dumb_delay(500);
+    dumb_delay(1000);
   }
 }
 
@@ -90,7 +90,7 @@ void led_2_thread(void const *argument)
   {
     // toggle the second led on the gpio pin
     toggle_gpio(led2);
-    dumb_delay(200);
+    dumb_delay(1000);
   }
 }
 
